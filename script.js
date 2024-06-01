@@ -14,10 +14,8 @@ const operate = (operator,num1,num2)=>{
     divide(num1,num2);
 };
 const appearOnDisplay = ()=>{
-  const number = document.querySelector("button.number");
-  const display = document.querySelector("div");
-  number.addEventListener("click",()=>{
-      display.appendChild(number);
-      firstVariable = parseInt(number);
-  });
+    const display = document.querySelector(".display");
+    const number = document.querySelector(".number");
+    number.addEventListener("click",()=>display.textContent += number);
 };
+appearOnDisplay();
