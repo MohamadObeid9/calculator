@@ -1,0 +1,49 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.display{
+    padding: 56px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.numbers{
+    width: 85px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.number{
+    width: 25px;
+    height: 25px;
+}
+.clear,.zero{
+    width: 55px;
+    height: 25px;
+}
+.sideRow{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.operator{
+    width: 25px;
+    height: 25px;
+}
+.equal{
+    height: 55px;
+}
+.downRow{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
