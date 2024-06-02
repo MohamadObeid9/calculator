@@ -18,7 +18,7 @@ const displayArea = document.querySelector(".display");
 displayArea.textContent += displayValue;
 
 const updateDisplay = (e)=>{
-    displayValue = e.target.id;
+    displayValue = e.target.textContent;
     displayArea.textContent = displayValue;
 }
 const buttons = document.querySelectorAll(".number");
