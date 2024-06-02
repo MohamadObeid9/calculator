@@ -27,8 +27,24 @@ buttons.forEach( number =>{
         updateDisplay(e);
     })
 });
+const operators = document.querySelectorAll(".operator");
+operators.forEach( operator =>{
+    operator.addEventListener("click",(e)=>{
+        updateDisplay(e);
+    })
+});
 const  clear = ()=>{
     const clearButton = document.querySelector(".clear");
     clearButton.addEventListener("click",()=> displayArea.textContent = 0)
 };
 clear();
+
+
+
+
+// const result = ()=>{
+//     const resultButton = document.querySelector(".equal");
+//     resultButton.addEventListener("click",()=>{
+//         operate()
+//     })
+// };
