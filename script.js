@@ -55,6 +55,7 @@ const  clear = ()=>{
     clearButton.addEventListener("click",()=>{
         firstVariable  = "";
         secondVariavle = "";
+        operatorUsed   = "";
         displayArea.textContent = 0})
 };
 
