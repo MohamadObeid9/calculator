@@ -27,3 +27,8 @@ buttons.forEach( number =>{
         updateDisplay(e);
     })
 });
+const  clear = ()=>{
+    const clearButton = document.querySelector(".clear");
+    clearButton.addEventListener("click",()=> displayArea.textContent = 0)
+};
+clear();
