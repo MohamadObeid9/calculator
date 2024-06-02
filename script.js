@@ -11,7 +11,7 @@ let operatorUsed    = "" ;
 
 // a function that can detect which operator to use
 const operate = (operator,num1,num2)=>{
-    (num1 === "") ? num1 = 0 : num1 = Number(num1);
+    (num1 === "") ? num1 = 0 : num1 = Number(num1);//replaced parseInt with Number so parseInt("1.5")=1 while number("1.5")=1.5
     (num2 === "") ? num2 = 0 : num2 = Number(num2);
     (operator === "+") ? displayArea.textContent = add(num1,num2):
     (operator === "-") ? displayArea.textContent = subtract(num1,num2):
