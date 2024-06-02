@@ -13,9 +13,17 @@ const operate = (operator,num1,num2)=>{
     mutiply(num1,num2);
     divide(num1,num2);
 };
-const appearOnDisplay = ()=>{
-    const display = document.querySelector(".display");
-    const number = document.querySelector(".number");
-    number.addEventListener("click",()=>display.textContent += number);
-};
-appearOnDisplay();
+let displayValue = 0 ;
+const displayArea = document.querySelector(".display");
+displayArea.textContent += displayValue;
+
+const updateDisplay = (e)=>{
+    displayValue = e.target.id;
+    displayArea.textContent = displayValue;
+}
+const buttons = document.querySelectorAll(".number");
+buttons.forEach( number =>{
+    number.addEventListener("click",(e)=>{
+        updateDisplay(e);
+    })
+});
