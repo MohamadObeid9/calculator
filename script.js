@@ -13,11 +13,11 @@ let operatorUsed    = "" ;
 const operate = (operator,num1,num2)=>{
     (num1 === "") ? num1 = 0 : num1 = Number(num1);//replaced parseInt with Number so parseInt("1.5")=1 while number("1.5")=1.5
     (num2 === "") ? num2 = 0 : num2 = Number(num2);
-    (operator === "+") ? displayArea.textContent = add(num1,num2):
-    (operator === "-") ? displayArea.textContent = subtract(num1,num2):
-    (operator === "*") ? displayArea.textContent = mutiply(num1,num2):
+    (operator === "+") ? displayArea.textContent = `${add(num1,num2)}`:
+    (operator === "-") ? displayArea.textContent = `${subtract(num1,num2)}`:
+    (operator === "*") ? displayArea.textContent = `${mutiply(num1,num2)}`:
     (operator === "/") ? (num2 === 0) ? alert("ERROR") :
-    displayArea.textContent = divide(num1,num2):
+    displayArea.textContent = `${divide(num1,num2)}`:
     alert("pls choose an operator");
 };
 
@@ -29,7 +29,7 @@ displayArea.textContent += displayValue;
 // let the number or operator appear on the display
 const updateDisplay = (e)=>{
     displayValue = e.target.textContent;
-    displayArea.textContent = displayValue;
+    displayArea.textContent += displayValue;
 }
 
 // set the numbers to appear on the screen
@@ -59,7 +59,7 @@ const  clear = ()=>{
         operatorUsed   = "";
         displayArea.textContent = 0})
 };
-
+// here we utilize everything we did before to let the calcutor work perfectly
 const result = ()=>{
     const resultButton = document.querySelector(".equal");
     resultButton.addEventListener("click",()=>{
