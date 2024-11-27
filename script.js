@@ -34,7 +34,9 @@ displayArea.textContent = displayValue;
 // let the number or operator appear on the display
 const updateDisplay = (e) => {
   displayValue = e.target.textContent;
-  displayArea.textContent==="0"?displayArea.textContent = displayValue:displayArea.textContent+=displayValue;
+  displayArea.textContent === "0"
+    ? (displayArea.textContent = displayValue)
+    : (displayArea.textContent += displayValue);
 };
 
 // set the numbers to appear on the screen
