@@ -1,24 +1,28 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply p-0 m-0 box-border;
+  }
 }
-body {
+/* body {
   height: 100vh;
   background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.calculator {
+} */
+/* .calculator {
   background-color: black;
   width: 500px;
   height: 100%;
-  /* padding: 10px; */
+  padding: 10px;
   border: 5px solid rgba(168, 173, 175, 0.938);
-  border-radius: 40px /*40px 0px 0px*/;
-}
-.display {
+  border-radius: 40px ;
+}  */
+/* .display {
   width: 100%;
   height: 41%;
   color: rgb(129, 236, 7);
@@ -27,35 +31,35 @@ body {
   justify-content: end;
   align-items: end;
   padding-bottom: 10px;
-}
-.number {
+} */
+/* .number {
   background-color: rgb(102, 99, 99);
-}
-.operator {
+} */
+/* .operator {
   background-color: yellow;
-}
-button {
+} */
+/* button {
   border: none;
   font-size: 3em;
-  width:100%;
+  width: 100%;
   height: 160%;
-  border:1px solid rgb(248, 243, 243);
-  /* border-radius: 50%; */
-}
-.container {
-  width:100%;
+  border: 1px solid rgb(248, 243, 243);
+  border-radius: 50%;
+} */
+/* .container {
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(5, 50px);
   grid-template-columns: repeat(4, 50px);
-  row-gap:30px;
+  row-gap: 30px;
   grid-template:
     "clear clear division mutliplication"
     "seven eight nine minos"
     "four five six plus"
     "one two three equal"
     "zero zero point equal";
-}
-.one {
+} */
+/* .one {
   grid-area: one;
 }
 .two {
@@ -103,10 +107,9 @@ button {
 }
 .clear {
   grid-area: clear;
-  /* border-radius: 100px; */
 }
 .equal {
   grid-area: equal;
   height: 123%;
   border-radius: 0 0 40px;
-}
+} */
