@@ -8,7 +8,7 @@ export const variables = () => {
   if (displayArea) {
     displayArea.textContent = displayValue.toString();
   }
-
+  displayArea.textContent = "0";
   return {
     firstVariable,
     secondVariable,

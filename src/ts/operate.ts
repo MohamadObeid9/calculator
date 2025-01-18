@@ -24,7 +24,7 @@ export const operate = (
       return multiply(number1, number2);
     case "/":
       if (number2 === 0) {
-        alert("ERROR");
+        displayArea.textContent = "MATH ERROR";
         return;
       } else {
         displayArea.textContent = `${divide(number1, number2)}`;

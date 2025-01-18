@@ -5,10 +5,12 @@ import { numbers } from "./ts/numbers";
 import { operators } from "./ts/operators";
 
 function initializeCalculator() {
-    numbers();
-    operators();
-    showResult();
-    clear();
+  const display = document.querySelector(".display") as HTMLElement;
+  display.textContent = "0";
+  numbers();
+  operators();
+  showResult();
+  clear();
 }
 
 initializeCalculator();
