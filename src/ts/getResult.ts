@@ -2,8 +2,10 @@ import { operate } from "./operate";
 import { variables } from "./variables";
 
 export const getResult = () => {
-  const { displayArea } = variables();
-  const rest: string[] = displayArea.textContent.split("");
+  const { displayArea, operationArea } = variables();
+  const result = displayArea.textContent;
+  operationArea.textContent = result;
+  const rest: string[] = result.split("");
   let index: number;
   for (let i = 0; i < rest.length; i++) {
     if (rest[i] === ".") {

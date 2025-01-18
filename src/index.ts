@@ -6,7 +6,7 @@ import { operators } from "./ts/operators";
 
 function initializeCalculator() {
   window.onload = () => {
-    const display = document.querySelector(".display") as HTMLElement;
+    const display = document.querySelector(".result-display") as HTMLElement;
     display.textContent = "0";
   };
   numbers();

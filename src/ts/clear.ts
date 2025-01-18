@@ -5,7 +5,8 @@ export const clear = (): void => {
   if (!clearButton) return;
 
   clearButton.addEventListener("click", () => {
-    const { displayArea } = variables();
+    const { displayArea, operationArea } = variables();
     displayArea.textContent = "0";
+    operationArea.textContent = "";
   });
 };
