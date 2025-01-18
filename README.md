@@ -4,7 +4,7 @@ This a simple calculator i build using vanilla js , u can add substract divide a
 
 ## Deployement
 
-You can find the ![Live Preview here](https://mohamadobeid9.github.io/calculator/) 
+You can find the [Live Preview here](https://mohamadobeid9.github.io/calculator/) 
 
 ## Installation
 
