@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply base styles to all elements */
 @layer base {
   * {
-    @apply p-0 m-0 box-border;
+    @apply p-0 m-0 box-border; /* Remove padding and margin, set box-sizing to border-box */
   }
 }
 
+/* Define the grid layout for the calculator container */
 .container {
   grid-template:
-    "clear clear division mutliplication"
-    "seven eight nine minos"
+    "clear clear division multiplication"
+    "seven eight nine minus"
     "four five six plus"
     "one two three equal"
     "zero zero point equal";
 }
+
+/* Define grid areas for each button */
 .one {
   grid-area: one;
 }
@@ -52,8 +56,8 @@
 .plus {
   grid-area: plus;
 }
-.minos {
-  grid-area: minos;
+.minus {
+  grid-area: minus;
 }
 .multiplication {
   grid-area: multiplication;
