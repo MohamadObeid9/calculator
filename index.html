@@ -4,34 +4,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Calculator</title> <!-- Changed title to be more descriptive -->
 <script defer src="main.js"></script></head>
 
 <body class="h-screen bg-slate-400 flex justify-center items-center">
+  <!-- Main container for the calculator -->
   <div class="bg-black w-96 h-full border ring-primary rounded-[40px]">
+    <!-- Display section for operations and results -->
     <div class="w-full h-[50%] flex justify-end items-end flex-col display">
-      <div class=" text-yellow-300 text-[30px] flex justify-end items-end px-2 pb-3 operation-display"></div>
-      <div class=" text-yellow-400 text-[50px] flex justify-end items-end px-2 pb-3 result-display"></div>
+      <div class="text-yellow-300 text-[30px] flex justify-end items-end px-2 pb-3 operation-display"></div>
+      <div class="text-yellow-400 text-[50px] flex justify-end items-end px-2 pb-3 result-display"></div>
     </div>
+    <!-- Buttons container -->
     <div class="w-full h-[50%] grid grid-rows-5 grid-cols-4 gap-2 p-2 container">
+      <!-- Clear button -->
       <button class="bg-red-600 border-none text-5xl w-full h-full border-slate-300 clear">
         Clear
       </button>
+      <!-- Operator buttons -->
       <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 operator division">
         /
       </button>
-      <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 operator mutliplication">
+      <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 operator multiplication">
         *
       </button>
-      <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 operator minos">
+      <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 operator minus">
         -
       </button>
       <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 operator plus">
         +
       </button>
+      <!-- Equal button -->
       <button class="bg-yellow-500 border-none text-5xl w-full h-full border-slate-300 rounded-br-[40px] equal">
         =
       </button>
+      <!-- Number buttons -->
       <button class="bg-slate-500 border-none text-5xl w-full h-full border-slate-300 number nine">
         9
       </button>
